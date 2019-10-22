@@ -9,15 +9,6 @@ package abstractFactory;
  *
  * @author Pate
  */
-public class Farkut extends VaatteenStatsit implements Vaate {
-
-    public Farkut(String merkki) {
-        super.merkki = merkki;
-    }
-
-    @Override
-    public String toString() {
-        return this.merkki;
-    }
-
+public class VaatteenStatsit {
+    public String merkki = "";
 }

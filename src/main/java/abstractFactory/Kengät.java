@@ -9,13 +9,10 @@ package abstractFactory;
  *
  * @author Pate
  */
-public class Kengät implements Vaate {
-
-    private String merkki = "";
+public class Kengät extends VaatteenStatsit implements Vaate {
 
     public Kengät(String merkki) {
-        this.merkki = merkki;
-
+        super.merkki = merkki;
     }
 
     @Override
