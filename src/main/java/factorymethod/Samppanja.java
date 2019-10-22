@@ -10,6 +10,7 @@ package factorymethod;
  * @author Pate
  */
 public class Samppanja implements  Juoma{
+    @Override
     public String toString(){
         return "samppanja";
     }

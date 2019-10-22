@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package factorymethod;
+package abstractFactory;
 
 /**
  *
  * @author Pate
  */
-public class Maito implements Juoma{
-    @Override
-    public String toString(){
-        return "maito";
-    }
+public interface Vaate {
+    
+ 
+   
 }
