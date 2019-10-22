@@ -16,11 +16,13 @@ public class Jasper {
     //vl = vaatelista
     ArrayList<Vaate> vl = new ArrayList<>();
     
-    public void pueVaatteet(boolean valmistunut) {
+    public void pueVaatteet(String tehtaanLuokanNimi) {
         //pitää ottaa vaatteet pois
         vl.clear();
         
-        AbstractFactory tehdas = FactoryProducer.getFactory(valmistunut);
+        AbstractFactory tehdas = FactoryProducer.getFactory(tehtaanLuokanNimi);
+        
+        
         Vaate farkut = tehdas.getVaate("farkut");
         Vaate kengät = tehdas.getVaate("kengät");
         Vaate lippis = tehdas.getVaate("lippis");
