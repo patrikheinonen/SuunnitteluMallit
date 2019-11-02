@@ -17,10 +17,8 @@ public class FactoryProducer {
         try {
             Class c = Class.forName(nimi);
             //olennaista, että try lohkoa käytetään koska toi forName voi heittää erroria.
-            //ja newInstance heittää erroria kovaa jos sielt tuleeki vaikka jasperi tyypinen olio (XD)
+            //ja newInstance heittää erroria
             //kun me odotetaan tässä kuitenkin AINA tietynlaista oliota.
-            //netbeans on onneks nii kiva, et sanoo sulle et oot ***** jos et laita 
-            //tässä try catchia.
             AbstractFactory s = (AbstractFactory)c.newInstance();
             return  s;
         } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
