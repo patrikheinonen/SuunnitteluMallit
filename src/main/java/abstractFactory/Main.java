@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
         Jasper jasper = new Jasper();
-        //omg sain reflektion toimii. Jos se luokka mitä käytät
+        //Jos se luokka mitä käytät
         //forName metodin parametrina on pakkauksen sisässä
         //pitää parametrin olla muotoa "pakkauksenNimi.LuokanNimi"
         jasper.pueVaatteet("abstractFactory.AdidasTehdas");
