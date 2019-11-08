@@ -28,4 +28,5 @@ public class AdidasTehdas extends AbstractFactory{
         return null;
     }
     
+
 }

@@ -5,6 +5,8 @@
  */
 package abstractFactory;
 
+import java.io.IOException;
+
 
 
 /**
@@ -13,17 +15,13 @@ package abstractFactory;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Jasper jasper = new Jasper();
-        //Jos se luokka mitä käytät
-        //forName metodin parametrina on pakkauksen sisässä
-        //pitää parametrin olla muotoa "pakkauksenNimi.LuokanNimi"
-        jasper.pueVaatteet("abstractFactory.AdidasTehdas");
-        //jasper the java god valmistuu (HURRAA!!!),
-        //Parametri kertoo että jasper pukee enää bossin
-        //vaatteitta päällensä (insert aurinkolasi coolguy emoji)
-        jasper.pueVaatteet("abstractFactory.BossinTehdas");
+        
+        jasper.pueVaatteet();
+
+
 
     }
 }

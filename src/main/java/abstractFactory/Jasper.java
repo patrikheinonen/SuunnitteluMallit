@@ -5,6 +5,7 @@
  */
 package abstractFactory;
 
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -16,12 +17,11 @@ public class Jasper {
     //vl = vaatelista
     ArrayList<Vaate> vl = new ArrayList<>();
     
-    public void pueVaatteet(String tehtaanLuokanNimi) {
+    public void pueVaatteet() throws IOException {
         //pitää ottaa vaatteet pois
         vl.clear();
         
-        AbstractFactory tehdas = FactoryProducer.getFactory(tehtaanLuokanNimi);
-        
+        AbstractFactory tehdas = FactoryProducer.getFactory();
         
         Vaate farkut = tehdas.getVaate("farkut");
         Vaate kengät = tehdas.getVaate("kengät");
