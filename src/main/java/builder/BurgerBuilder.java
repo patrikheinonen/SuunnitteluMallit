@@ -32,18 +32,21 @@ public abstract class BurgerBuilder {
     private StringBuilder mcDonalds = new StringBuilder();
     
     public Object getHamburger() {
+        
         if (burger instanceof List) {
             hesburger = (List) burger;
             for (Object hesburger1 : hesburger) {
                 System.out.println(hesburger1.toString());
             }
+            return hesburger;
         } else {
-            mcDonalds = (StringBuilder)burger;
-            System.out.println(mcDonalds.toString());
+            System.out.println(burger.toString());
+            mcDonalds = (StringBuilder) burger;
+            return mcDonalds;
         }
-        return burger;
-    }
 
+    }
+   
     public void setBurger(Object burger) {
         this.burger = burger;
     }

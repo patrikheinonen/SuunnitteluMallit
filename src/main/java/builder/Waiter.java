@@ -23,7 +23,6 @@ package builder;
 public class Waiter {
 
     private BurgerBuilder burgerBuilder;
-
     public void setBurgerBuilder(BurgerBuilder burgerBuilder) {
         this.burgerBuilder = burgerBuilder;
     }

@@ -29,7 +29,7 @@ public class Main {
 
         //mäkkäri tulostuu yhelle riville koska kutsutaan stringbuilder to string
         //hese tulostuu usealle koska for looppi ja println tulostaa tyhjän rivin aina loppuun
-        waiter.setBurgerBuilder(mcDonalds);
+        waiter.setBurgerBuilder(hesburger);
         waiter.constructBurger();
 
         waiter.getBurger();
